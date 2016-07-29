@@ -1,0 +1,11 @@
+services:
+  my_twig_filter.twig_extension_ellipsis:
+    arguments: ['@renderer']
+    class: Drupal\my_twig_filter\TwigExtension\Ellipsis
+    tags:
+      - { name: twig.extension }
+  my_twig_filter.twig_extension_truncate:
+    arguments: ['@renderer']
+    class: Drupal\my_twig_filter\TwigExtension\Truncate
+    tags:
+      - { name: twig.extension }

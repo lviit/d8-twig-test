@@ -1,0 +1,5 @@
+name: my_twig_filter
+type: module
+description: My Twig filter
+core: 8.x
+package: Custom

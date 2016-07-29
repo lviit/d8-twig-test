@@ -1,0 +1,8 @@
+{% extends "node.html.twig" %}
+{% set attributes = attributes.addClass('node--teaser') %}
+  {% block content %}
+  <div{{ content_attributes }}>
+  	<span> {{ 'this is a teaser'|t }} </span>
+    {{ my_custom_stuff.body|truncate|ellipsis }}
+  </div>
+{% endblock content %}
